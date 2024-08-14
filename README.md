@@ -2,9 +2,9 @@
 #### Using terraform to deploy commonly used DevOps Tools (incorporating helm charts)
 
 Tools included so far:
-- Kubernetes
-- VPCs, Subnets, NAT, Internet Gateway
-- Prometheus
+- Kubernetes (EKS)
+- AWS VPCs, Subnets, NAT, Internet Gateway
+- Prometheus, Grafana (kube-prometheus-stack)
 - ArgoCD
 - *Keycloak*
 
