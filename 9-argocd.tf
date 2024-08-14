@@ -1,16 +1,3 @@
-# provider "kubernetes" {
-#   # alias       = "argocd"
-#   config_path = "~/.kube/config" # Adjust as needed for your kubeconfig path
-# }
-
-# provider "helm" {
-#   # alias = "argocd"
-#   kubernetes {
-#     config_path = "~/.kube/config" # Adjust as needed for your kubeconfig path
-#   }
-# }
-
-
 provider "kubernetes" {
   alias                  = "argocd"
   host                   = aws_eks_cluster.ledgerndary.endpoint

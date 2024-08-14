@@ -45,17 +45,3 @@ resource "aws_eks_cluster" "ledgerndary" {
   # Otherwise, EKS will not be able to properly delete EKS managed EC2 infrastructure such as Security Groups.
   depends_on = [aws_iam_role_policy_attachment.ledgerndary-AmazonEKSClusterPolicy]
 }
-
-
-# Output the EKS cluster endpoint and certificate authority data
-output "eks_cluster_endpoint" {
-  value = aws_eks_cluster.ledgerndary.endpoint
-}
-
-output "eks_cluster_certificate_authority" {
-  value = aws_eks_cluster.ledgerndary.certificate_authority[0].data
-}
-
-output "eks_cluster_name" {
-  value = aws_eks_cluster.ledgerndary.name
-}
