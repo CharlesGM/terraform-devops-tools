@@ -1,8 +1,15 @@
-### terraform-devops-tools
-#### Using terraform to deploy commonly used DevOps Tools
+## Terraform Devops Tools on AWS
+#### Using terraform to deploy commonly used DevOps Tools (incorporating helm charts)
 
 Tools included so far:
 - Kubernetes
-- VPCs
+- VPCs, Subnets, NAT, Internet Gateway
 - Prometheus
 - ArgoCD
+- **Keycloak
+
+
+To be added:
+
+- Nginx Ingress Controller
+- Github Actions Runner Controller

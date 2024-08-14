@@ -4,7 +4,7 @@ output "eks_cluster_endpoint" {
 }
 
 output "eks_cluster_certificate_authority" {
-  value = aws_eks_cluster.ledgerndary.certificate_authority[0].data
+  value     = aws_eks_cluster.ledgerndary.certificate_authority[0].data
   sensitive = true
 }
 
