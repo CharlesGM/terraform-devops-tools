@@ -6,7 +6,7 @@ Tools included so far:
 - VPCs, Subnets, NAT, Internet Gateway
 - Prometheus
 - ArgoCD
-- **Keycloak
+- *Keycloak*
 
 
 To be added:
