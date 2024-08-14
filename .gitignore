@@ -1,0 +1,23 @@
+# Ignore Terraform state files
+*.tfstate
+*.tfstate.backup
+
+# Ignore the .terraform directory
+.terraform/
+
+# Ignore the Terraform lock file
+.terraform.lock.hcl
+
+
+*Add tfvars for test, normally I would git ignore this (depends on how sensitive)*
+# Ignore Terraform variable files
+# terraform.tfvars
+
+# Optional: Ignore local override files
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Ignore any secret files (example)
+secret.tfvars
