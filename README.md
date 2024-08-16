@@ -13,3 +13,4 @@ To be added:
 
 - Nginx Ingress Controller
 - Github Actions Runner Controller
+- Istio
