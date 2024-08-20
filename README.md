@@ -6,11 +6,11 @@ Tools included so far:
 - AWS VPCs, Subnets, NAT, Internet Gateway
 - Prometheus, Grafana (kube-prometheus-stack)
 - ArgoCD
+- Nginx Ingress Controller
 - *Keycloak*
 
 
 To be added:
 
-- Nginx Ingress Controller
 - Github Actions Runner Controller
 - Istio
