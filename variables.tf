@@ -8,7 +8,7 @@ variable "vpc_prefix" {
 }
 
 variable "bucket_name" {
-  description = "Name of Terraform state file"
+  description = "Name of bucket to store Terraform state file"
   type        = string
 }
 
