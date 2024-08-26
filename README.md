@@ -7,13 +7,12 @@ Tools included so far:
 - Prometheus, Grafana (kube-prometheus-stack)
 - ArgoCD
 - Nginx Ingress Controller
-- *Keycloak*
 
 
 To be added:
 
 - Github Actions Runner Controller
 - Istio
-
+- Keycloak
 
 
