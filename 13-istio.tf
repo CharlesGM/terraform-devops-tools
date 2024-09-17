@@ -39,19 +39,19 @@ resource "helm_release" "istio" {
   depends_on = [kubernetes_namespace.istio_system]
 }
 
-resource "helm_release" "istio_discovery" {
-  name      = "istiod"
-  namespace = kubernetes_namespace.istio_system.metadata[0].name
+# resource "helm_release" "istio_discovery" {
+#   name      = "istiod"
+#   namespace = kubernetes_namespace.istio_system.metadata[0].name
 
-  repository = "https://istio-release.storage.googleapis.com/charts"
-  chart      = "istiod"
-  version    = "1.18.2" # Adjust to the version you want to deploy
-  #version          = "1.23.0"
+#   repository = "https://istio-release.storage.googleapis.com/charts"
+#   chart      = "istiod"
+#   version    = "1.18.2" # Adjust to the version you want to deploy
+#   #version          = "1.23.0"
 
-  create_namespace = false
+#   create_namespace = false
 
-  depends_on = [kubernetes_namespace.istio_system, helm_release.istio]
-}
+#   depends_on = [kubernetes_namespace.istio_system, helm_release.istio]
+# }
 
 resource "helm_release" "istio_ingress" {
   name      = "istio-ingress"
@@ -67,6 +67,7 @@ resource "helm_release" "istio_ingress" {
     file("${path.module}/istio-ingress-values.yaml")
   ]
 
-  depends_on = [kubernetes_namespace.istio_system, helm_release.istio, helm_release.istio_discovery]
+  # depends_on = [kubernetes_namespace.istio_system, helm_release.istio, helm_release.istio_discovery]
+  depends_on = [kubernetes_namespace.istio_system, helm_release.istio]
   timeout    = 900
 }
